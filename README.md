@@ -2,7 +2,7 @@
 
 Este material foi desenvolvido para dar suporte aos alunos da disciplina de Algoritmos em Grafos. Nesses repositórios, serão disponibilizados tutoriais e material teórico para o ensino de algoritmos em grafos na linguagem python. Os conceitos podem ser usados para o desenvolvimento em outras liguagens, mas por uma questão de facilidade e praticidade que a linguagem Python possui, o presente material terá exemplos em Python.
 
-## Tópicos a se abordar
+## Tópicos abordados
 * Bibliotecas em python como matplotlib e networkX;  
 * Estruturas de dados;  
 * Métodos de busca em grafos;  
@@ -15,7 +15,7 @@ Este material foi desenvolvido para dar suporte aos alunos da disciplina de Algo
 * Sistema operacional: Windows ou Linux;  
 * Jupyter;  
 * Conhecimento básico para utilizar o github;  
-* Python 3x (Preferencialmente >=3.7).  
+* Python 3.x (Preferencialmente >=3.7).  
 ## Instalação do Git
 ### Windows
 Para instalar o git no windows faça o download do instalador de 32 ou 64 bits:
@@ -85,42 +85,14 @@ Na maioria das distribuições Linux o python já vem instalado
 ### 2. Instalar 
 Existem diversas formas de se instalar o python e suas diversas versões no Linux, aqui apenas alguns exemplos.
 
-### 2.1. Através de download
+#### 2.1. Apenas através do terminal(mais fácil)
 
-2.1.1. Escolha uma versão para download [Link downloads python](https://www.python.org/downloads/)
- 
-
-![Download release](./Imagens/download-3.7release.gif)
-
-2.1.2. Extraia o arquivo compactado
-``` 
-tar -xf Python-3.x.x.tar.xz
+2.1.1. Para Debian e derivados:
 ```
-
-2.1.3. Entre no diretório
-
-```
-cd Python-3.x.x
-```
-
-2.1.4. Instale
-```
-./configure --enable-optimizations
-```
-```
-sudo make install 
-```
-
-![Pyhton 3.7 terminal](./Imagens/python3.7.png)
-
-#### 2.2. Apenas através do terminal
-
-2.2.1. Para Debian e derivados:
-```
-sudo apt install python3.x
+sudo apt install python3
 ``` 
 
-2.2.2 Para RHEL/CentOS 7/6 & Fedora 31/30
+2.1.2 Para RHEL/CentOS 7/6 & Fedora 31/30
 
 ``` 
 sudo yum install gcc openssl-devel bzip2-devel libffi-devel
@@ -147,8 +119,39 @@ sudo make altinstall
 ``` 
 
 ![Pyhton 3.8 terminal](./Imagens/python3.8.png)
+
+### 2.2. Escolhendo a release no site 
+
+2.2.1. Escolha uma versão para download [Link downloads python](https://www.python.org/downloads/)
+ 
+
+![Download release](./Imagens/download-3.7release.gif)
+
+2.2.2. Extraia o arquivo compactado
+``` 
+tar -xf Python-3.x.x.tar.xz
+```
+
+2.2.3. Entre no diretório
+
+```
+cd Python-3.x.x
+```
+
+2.2.4. Instale
+```
+./configure --enable-optimizations
+```
+```
+sudo make install 
+```
+
+![Pyhton 3.7 terminal](./Imagens/python3.7.png)
+
 ### 3. Pip
 Em alguns casos é necessário instalar o pip (package manager for Python - gerenciador de pacotes para Python)
+
+Verifique se o pip já está instalado com os comandos ```pip``` ou ```pip3``` 
 
 3.1. Debian/Ubuntu
 
@@ -222,7 +225,24 @@ ou
 conda install -c conda-forge notebook
 ```
 
-### Usando Ananconda
+### Utilizando snapd
+
+```
+sudo apt update
+```
+
+```
+sudo apt install snapd
+```
+
+```
+sudo snap install jupyter
+```
+
+Teste: ```jupyter notebook```
+
+
+### Usando Ananconda ( mais difícil)
 No Linux, é possível o Jupyter através do terminal ou fazendo o download de um pacote utilizando o software Anaconda [Link para o instalador](https://www.anaconda.com/download/#linux)
 
 Instale a versão Anaconda com a versão 3.x do Python
@@ -285,6 +305,8 @@ ou
 ``` 
 jupyter-notebook
 ``` 
+
+**Para qualquer erro ou problema encontrado casdastre uma issue ou entre em contato através do email isabela.nascimento@estudante.ufla.br**
 
 
 
