@@ -38,9 +38,10 @@ Q = []
 # Lista que ira conter os dados da busca em largura:
 # [[vertice, cor, grau de visitacao a partir de s, pai]]
 grafo_bfs = []
+
 def bfs(Grafo, vertice_inicial):
     '''
-    Função BFS - realiza a busca em largura de um grafo dado
+    Função BFS - realiza a busca em largura de um grafo
     Parametros:
         Grafo 
             grafo passado por parametro
@@ -82,11 +83,10 @@ def bfs(Grafo, vertice_inicial):
                 indice = i
         # se o grafo ainda nao foi explorado, recebe os valores: CINZA, o grau de distância de s e o vértice pai
         for i in Grafo[u]:                 
-            if (grafo_bfs[indice_adj(conjunto_vertices, i)][1] == 'BRANCO'):
-                grafo_bfs[indice_adj(conjunto_vertices, i)][1] = 'CINZA'
-                grafo_bfs[indice_adj(conjunto_vertices, i)
-                          ][2] = grafo_bfs[indice][2] + 1
-                grafo_bfs[indice_adj(conjunto_vertices, i)][3] = u
+            if (grafo_bfs[conjunto_vertices.index(i)][1] == 'BRANCO'):
+                grafo_bfs[conjunto_vertices.index(i)][1] = 'CINZA'
+                grafo_bfs[conjunto_vertices.index(i)][2] = grafo_bfs[indice][2] + 1
+                grafo_bfs[conjunto_vertices.index(i)][3] = u
                 Q.append(i)
                    
         # Após ser explorado e visitado o vértice não será mais acioanado, então 
@@ -94,21 +94,6 @@ def bfs(Grafo, vertice_inicial):
         for i in range(len(grafo_bfs)):
             if u == grafo_bfs[i][0]:
                 grafo_bfs[i][1] = 'PRETO'
-
-def indice_adj(vertices, u):
-    '''
-    Função para encontrar o índice de um vertice no grafo
-    Parametros:
-        vertices 
-            lista com o conjunto de vertices do grafo
-        u
-            vertice que queremos encontrar o indice
-    Retorno
-        indice do vertice no grafo
-
-    '''
-    if x in vertices:
-        return vertices.index(x)
   
 grafo = {
     1: {2: 4, 5: 9, 6: 8},
