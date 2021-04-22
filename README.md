@@ -1,6 +1,6 @@
 # Algoritmos-em-Grafos
 
-## Material também disponível no site: [http://algoritmosemgrafos.xyz/busca/buscaLargura](http://algoritmosemgrafos.xyz/busca/buscaLargura)
+## Material também disponível no site: [https://algoritmosemgrafos.xyz](https://algoritmosemgrafos.xyz
 
 Este material foi desenvolvido para dar suporte aos alunos da disciplina de Algoritmos em Grafos. Nesses repositórios, serão disponibilizados tutoriais e material teórico para o ensino de algoritmos em grafos na linguagem python. Os conceitos podem ser usados para o desenvolvimento em outras liguagens, mas por uma questão de facilidade e praticidade que a linguagem Python possui, o presente material terá exemplos em Python.
 
